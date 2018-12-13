@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+/* ALL ABOUT NAVIGATION */
+
+.button {
+	margin-bottom: 1em;
+	margin-top: 3em;
+
+}
+
+a:visited {
+	color: #4c374b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ea5045;
+	text-decoration: none;
+}
+
+nav a {
+	display: block;
+	padding: 1em;
+	background-color: #4c374b;
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #D7D8DC;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #F3F3F3;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #4c374b;
+	background-color: #F3F3F3;
+	text-decoration: none;
+	transition: 1s;
+}
+
+nav a:active {
+	background-color: #C07773;
+	visibility: visible;
+}
+
+nav {
+	display: none;
+}
+
+#menu {
+	display: none;
+}
+
+#menu:checked ~ nav {
+	/* nav right after the input*/
+	display: block;
+}
+
+label {
+	color: #ea5045;
+	font-size: 3em;
+}
+
+/* GENERAL */
+
+body {
+	background-color: #F3F3F3;
+	font-family: "Helvetica Neue";
+	color: #4c374b;
+}
+
+h1 {
+	font-size: 3em;
+	color: #ea5045;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+table,
+tr,
+td {
+	background-color: #BFC0C0;
+	color: #4c374b;
+	font-size: 20px;
+	border: 3px solid #2D3142;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5em;
+
+}
+
+footer {
+	background-color: #ea5045;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+main {
+	padding-bottom: 15em;
+}
+
+figure {
+	background-color: #6eceb2;
+}
+
+
+.menubutton {
+	width: 32%;
+	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.menubutton:hover {
+	background-color: #BFC0C0;
+	transition: 1s;
+}
+
+#btn1 {
+	border: 0.2em solid #CDD4DA;
+	text-align: center;
+	padding: 1em;
+}
+
+/* JAVASCRIPT */
+
+.fade {
+	animation: fade 5s alternate;
+}
+
+@keyframes fade {
+	50% {
+		opacity: 0
+	}
+}
+
+#btn1 {
+	border: none;
+	text-align: center;
+	padding: 1em;
+	background-color: #4c374b;
+	color: #f3f3f3;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*/// RESPONSIVE WEBSITE ///*/
+
+/*/// medium screen styling ///*/
+
+@media all and (min-width: 750px) {
+	body {
+		background-color: #f3f3f3;
+	}
+
+	nav {
+		display: block;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	input:checked ~ nav {
+		display: block;
+	}
+
+	header label {
+		display: none;
+	}
